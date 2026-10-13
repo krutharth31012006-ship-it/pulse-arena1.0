@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Arena - Play Arena & Community</title>
+    <!-- FontAwesome for Gaming Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER DECK -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo" id="navLogoBtn">
+                <i class="fa-solid fa-gamepad"></i> PULSE ARENA
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item active" data-target="store-view"><a href="#">Store</a></li>
+                <li class="nav-item" data-target="library-view"><a href="#">My Library</a></li>
+                <li class="nav-item" data-target="community-view"><a href="#">Community</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search games...">
+            </div>
+            <i class="fa-regular fa-bell icon-btn"></i>
+            <i class="fa-regular fa-comment icon-btn"></i>
+            <div class="profile-avatar">JD</div>
+        </div>
+    </nav>
+
+    <!-- STORE VIEW (HOMEPAGE) -->
+    <div id="store-view" class="page-view active">
+        <!-- GAMING HERO DECK -->
+        <section class="hero-section" id="heroSection">
+            <div class="hero-overlay"></div>
+            <div class="hero-glow-layer"></div>
+            
+            <div class="hero-content-wrapper">
+                <div class="hero-content active-hero" id="heroContent">
+                    <div class="badge-row">
+                        <span class="badge" id="heroBadge">OUT NOW</span>
+                        <span class="trending-tag" id="heroTrending"><i class="fa-solid fa-fire"></i> EDITOR'S PICK Trending #1</span>
+                    </div>
+                    <h1 id="heroTitle">ECHOES OF TITAN</h1>
+                    <p class="hero-description" id="heroDesc">At the edge of the known universe, a forgotten world is calling. Uncover its cosmic secrets, forge hidden alliances, and rewrite your story across an expansive open world.</p>
+                    <div class="hero-meta">
+                        <span class="meta-tag" id="heroGenre">Open-world RPG</span>
+                        <span class="meta-tag"><i class="fa-solid fa-desktop"></i> PC • PS5 • Xbox Series X</span>
+                        <span class="meta-tag rating"><i class="fa-solid fa-star"></i> 4.8 (12.4k reviews)</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary"><i class="fa-solid fa-play"></i> Play now</button>
+                        <button class="btn btn-secondary" id="openTrailerBtn"><i class="fa-solid fa-film"></i> Watch trailer</button>
+                    </div>
+                    <div class="library-status"><i class="fa-solid fa-circle-check"></i> In your library • Installed on PC</div>
+                </div>
+            </div>
+
+            <!-- UP NEXT SIDEBAR LAYOUT ELEMENT -->
+            <div class="up-next-widget" id="upNextWidget">
+                <span class="widget-title">UP NEXT</span>
+                <div class="widget-card">
+                    <img id="upNextImg" src="https://images.unsplash.com/photo-1614036417651-efe5912149d8?auto=format&fit=crop&w=300&q=80" alt="Next game thumbnail">
+                    <div class="widget-text">
+                        <h4 id="upNextTitle">The Last Ronin</h4>
+                        <p id="upNextMeta">Action RPG • Coming Friday</p>
+                    </div>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCOVER SECTION -->
+        <main class="container">
+            <div class="section-header">
+                <h2>Discover Something Great</h2>
+                <button class="text-link-btn">Browse all games</button>
+            </div>
+
+            <div class="games-grid">
+                <!-- Game 1 -->
+                <div class="game-card high-appeal">
+                    <div class="card-image">
+                        <span class="status-badge installed">INSTALLED</span>
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=500&q=80" alt="Echoes of Titan">
+                    </div>
+                    <div class="card-info">
+                        <span class="game-genre">Open-world RPG • PC</span>
+                        <h3>Echoes of Titan</h3>
+                        <p class="playtime">42.6 hrs played</p>
+                        <button class="card-play-btn"><i class="fa-solid fa-play"></i> Play</button>
+                    </div>
+                </div>
+                <!-- Game 2 -->
+                <div class="game-card high-appeal">
+                    <div class="card-image">
+                        <span class="status-badge installed">INSTALLED</span>
+                        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=500&q=80" alt="Hollow Kingdom">
+                    </div>
+                    <div class="card-info">
+                        <span class="game-genre">Soulslike RPG • PlayStation</span>
+                        <h3>Hollow Kingdom</h3>
+                        <p class="playtime">18.2 hrs played</p>
+                        <button class="card-play-btn"><i class="fa-solid fa-play"></i> Play</button>
+                    </div>
+                </div>
+                <!-- Game 3 -->
+                <div class="game-card high-appeal">
+                    <div class="card-image">
+                        <span class="status-badge installed">INSTALLED</span>
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=500&q=80" alt="Neon Overdrive">
+                    </div>
+                    <div class="card-info">
+                        <span class="game-genre">Racing • PC</span>
+                        <h3>Neon Overdrive</h3>
+                        <p class="playtime">8.4 hrs played</p>
+                        <button class="card-play-btn"><i class="fa-solid fa-play"></i> Play</button>
+                    </div>
+                </div>
+                <!-- Game 4 -->
+                <div class="game-card high-appeal">
+                    <div class="card-image">
+                        <span class="status-badge owned">OWNED</span>
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=500&q=80" alt="Cloud Drifter">
+                    </div>
+                    <div class="card-info">
+                        <span class="game-genre">Exploration • Xbox</span>
+                        <h3>Cloud Drifter</h3>
+                        <p class="playtime">Not played yet</p>
+                        <button class="card-install-btn"><i class="fa-solid fa-download"></i> Install</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- LIBRARY VIEW -->
+    <div id="library-view" class="page-view">
+        <div class="container">
+            <div class="library-header-metrics">
+                <div class="headline-metric-card neon-card">
+                    <h2>ECHOES OF TITAN</h2>
+                    <p>Chapter 04 - The silent frontier • 42.6 hours played</p>
+                    <button class="btn btn-primary">Continue playing</button>
+                </div>
+                <div class="headline-metric-card">
+                    <h2>NEON OVERDRIVE</h2>
+                    <p>PC • 8.4 hours played</p>
+                    <button class="btn btn-secondary">Play</button>
+                </div>
+            </div>
+
+            <div class="storage-bar-wrapper">
+                <div class="storage-text-row">
+                    <span>Local Storage: 186 GB / 512 GB available</span>
+                    <a href="#" class="manage-link">Manage Storage</a>
+                </div>
+                <div class="storage-bar-track">
+                    <div class="storage-bar-fill" style="width: 63.6%;"></div>
+                </div>
+            </div>
+
+            <div class="filter-section" style="margin-top: 40px;">
+                <div class="tabs">
+                    <div class="tab active">All platforms <span>8</span></div>
+                    <div class="tab">PC <span>5</span></div>
+                    <div class="tab">PlayStation <span>2</span></div>
+                    <div class="tab">Xbox <span>1</span></div>
+                </div>
+                <div class="sort-filter">
+                    <button class="sort-btn">Recently played</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMUNITY VIEW -->
+    <div id="community-view" class="page-view">
+        <div class="community-hero">
+            <div class="container">
+                <h1>Community Hub</h1>
+                <p>Share clips, discover tactics, and match with alternative squad mates globally.</p>
+                <div class="community-search-filters">
+                    <input type="text" placeholder="Search community content...">
+                    <button class="community-post-btn">Share Something</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container community-layout">
+            <div class="forum-feed">
+                <div class="forum-card">
+                    <div class="forum-card-header">
+                        <div class="user-meta-block">
+                            <div class="user-avatar user-online">V</div>
+                            <div>
+                                <strong>Valkyrie_Pro</strong>
+                                <span class="time-stamp">Posted in r/EchoesOfTitan • 22 mins ago</span>
+                            </div>
+                        </div>
+                        <span class="category-tag pin-tag">GUIDE</span>
+                    </div>
+                    <div class="forum-card-body">
+                        <h3>How to bypass the Chapter 04 Gateway Sentinels without breaking stealth</h3>
+                        <p>Found this crazy trick yesterday night. If you drop a flash-decoy emitter right next to the energy generator grid node on the left platform panel before the scan runs, the drone routes freeze loop completely...</p>
+                    </div>
+                    <div class="forum-card-footer">
+                        <div class="interaction-group">
+                            <button class="action-pill">1,402</button>
+                            <button class="action-pill">342</button>
+                            <button class="action-pill">Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forum-card">
+                    <div class="forum-card-header">
+                        <div class="user-meta-block">
+                            <div class="user-avatar">KX</div>
+                            <div>
+                                <strong>KryptonX</strong>
+                                <span class="time-stamp">Posted in r/NeonOverdrive • 2 hours ago</span>
+                            </div>
+                        </div>
+                        <span class="category-tag media-tag">CLIP</span>
+                    </div>
+                    <div class="forum-card-body">
+                        <h3>Broke the global time-trial speed record for Sector 9 track loop! (8.4s lap)</h3>
+                        <div class="mock-media-embed">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" alt="Video preview thumbnail">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
+                    <div class="forum-card-footer">
+                        <div class="interaction-group">
+                            <button class="action-pill">894</button>
+                            <button class="action-pill">112</button>
+                            <button class="action-pill">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="community-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Trending Game Circles</h3>
+                    <ul class="trending-circles-list">
+                        <li>
+                            <span class="circle-rank">1</span>
+                            <div class="circle-details"><strong>Echoes of Titan</strong><span>142k active members today</span></div>
+                            <span class="growth-metric positive">+24%</span>
+                        </li>
+                        <li>
+                            <span class="circle-rank">2</span>
+                            <div class="circle-details"><strong>Hollow Kingdom</strong><span>89k active members today</span></div>
+                            <span class="growth-metric positive">+12%</span>
+                        </li>
+                        <li>
+                            <span class="circle-rank">3</span>
+                            <div class="circle-details"><strong>Neon Overdrive</strong><span>64k active members today</span></div>
+                            <span class="growth-metric">-3%</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="trailerModal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <div class="live-indicator"></div> ECHOES OF TITAN — Official Launch Trailer
+                </div>
+                <button class="close-modal-btn" id="closeModalBtn">&times;</button>
+            </div>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-trigger"><i class="fa-solid fa-play" style="margin-left: 4px;"></i></div>
+                    <span class="video-status-text">TRAILER PAUSED</span>
+                </div>
+                <div class="video-controls">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <div class="controls-row">
+                        <div class="controls-left">
+                            <i class="fa-solid fa-play control-icon"></i>
+                            <span class="time-stamp">0:42 / 2:18</span>
+                        </div>
+                        <div class="controls-right">
+                            <span class="quality-badge">4K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-carousel-footer">
+                <i>3 / 3</i>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Pulse Arena</h3>
+                <p>&copy; 2026 Pulse Arena Hub. Never stop playing.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#">Support Hub</a>
+                <a href="#">Privacy Protocol</a>
+                <span class="lang-selector">English - USD</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
